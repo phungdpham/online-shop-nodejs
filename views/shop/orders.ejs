@@ -9,7 +9,7 @@
                 <h1>Nothing there!</h1>
             <% } else { %>
                 <ul class="orders">
-                    <% orders.forEach(order => { %>
+                    <% orders.forEach(order => { %> - <a href="/orders/<%= order._id %>">Invoice</a>
                         <li class="orders__item">
                             <h1>Order - # <%= order._id %></h1>
                             <ul class="orders__products">
